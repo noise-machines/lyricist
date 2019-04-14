@@ -1,7 +1,7 @@
 {
   "name": "@noise-machines/lyricist",
   "public": true,
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "Fetches song lyrics using the Genius.com API and website.",
   "main": "lib/index.js",
   "repository": {

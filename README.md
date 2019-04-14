@@ -103,9 +103,12 @@ You can provide options as a second parameter. The available options are:
 * `page`: Number (default: 1)
 * `sort` String: 'title' or 'popularity' (default: 'title')
 
+## Search for songs
+Use `search(query, { page = 1})` to search for songs using the Genius [search endpoint](https://docs.genius.com/#/search-h2). Genius' search endpoint doesn't seem to accept a perPage param.
+
 Example:
 ```js
-const songs = await lyricist.songsByArtist(2, { page: 2, perPage: 50 });
+const songs = await lyricist.search('Animal Collective', { page: 2 })
 ```
 
 ## Warning ⚠️

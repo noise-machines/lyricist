@@ -1,5 +1,6 @@
 {
-  "name": "lyricist",
+  "name": "@noise-machines/lyricist",
+  "public": true,
   "version": "2.2.0",
   "description": "Fetches song lyrics using the Genius.com API and website.",
   "main": "lib/index.js",
@@ -12,8 +13,7 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "build": "rimraf node6 && babel lib --out-dir node6 --ignore *.test.js",
-    "precommit": "lint-staged",
-    "publish": "yarn np"
+    "precommit": "lint-staged"
   },
   "lint-staged": {
     "lib/*.js": [
